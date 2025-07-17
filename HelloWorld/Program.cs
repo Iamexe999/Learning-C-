@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-// Console.WriteLine("Is that dih good?, yes king!");
-// Console.WriteLine("How good is that dih?, awesome!");
-// Console.WriteLine("How good is that dih?, bitch!");
+// Console.WriteLine("Is that game good?, yes king!");
+// Console.WriteLine("How good is that game?, awesome!");
+// Console.WriteLine("How good is that game?, bro!");
 // Console.WriteLine("Amazing!!!");
 // Console.WriteLine("Mmmmm, Aughhhh, Hmpphh!!!!");
 
@@ -51,7 +51,7 @@
 // aClusterFuckOfNumbers = 864294623648634296L;
 // Console.WriteLine(aClusterFuckOfNumbers);
 
-// string aWord = "Nigger";
+// string aWord = "Frudean";
 // char aCharacter = '$';
 // Console.WriteLine(aWord);
 // Console.WriteLine(aCharacter);
