@@ -12,3 +12,4 @@ C:\Users\whoco\Project\TheCSharpPlayersGuide\HelloWorld\obj\Debug\net9.0\refint\
 C:\Users\whoco\Project\TheCSharpPlayersGuide\HelloWorld\obj\Debug\net9.0\HelloWorld.pdb
 C:\Users\whoco\Project\TheCSharpPlayersGuide\HelloWorld\obj\Debug\net9.0\HelloWorld.genruntimeconfig.cache
 C:\Users\whoco\Project\TheCSharpPlayersGuide\HelloWorld\obj\Debug\net9.0\ref\HelloWorld.dll
+C:\Users\whoco\Project\TheCSharpPlayersGuide\HelloWorld\obj\Debug\net9.0\HelloWorld.sourcelink.json
