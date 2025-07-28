@@ -338,7 +338,7 @@
 
 // Console.Clear();
 
-// Console.WriteLine("User 2, gues the number.");
+// Console.WriteLine("User 2, guess the number.");
 
 // while (true)
 // {
@@ -402,22 +402,357 @@
 // for (int index = 0; index < 5; index++)
 //     Console.WriteLine($"{original[index]} and {copy[index]}");
 
-int[] array = new int[] { 4, 51, -7, 13, -99, 15, -8, 45, 90 };
+// int[] array = new int[] { 4, 51, -7, 13, -99, 15, -8, 45, 90 };
 
-int currentMinimum = int.MaxValue;
+// int currentMinimum = int.MaxValue;
 
-foreach (int value in array)
-{
-    if (value < currentMinimum)
-        currentMinimum = value;
+// foreach (int value in array)
+// {
+//     if (value < currentMinimum)
+//         currentMinimum = value;
+// }
+
+// Console.WriteLine(currentMinimum);
+
+// int total = 0;
+
+// foreach (int value in array)
+//     total += value;
+
+// float average = (float)total / array.Length;
+// Console.WriteLine(average);
+
+// int[] scores = new int[10];
+// scores = new int[20];
+// scores[0] = 999;
+// scores[1] = 1400;
+// Console.WriteLine(scores);
+// Console.WriteLine(scores.Length);
+// Console.WriteLine(scores[0]);
+// Console.WriteLine(scores[1]);
+// Console.WriteLine(scores[2]);
+
+// int[] firstTwoNumbers = scores[0..2];
+// Console.WriteLine(firstTwoNumbers);
+// Console.WriteLine(scores[^1]);
+
+
+// Console.Write("Input a length: ");
+// int length = int.Parse(Console.ReadLine());
+// int[] array = new int[length];
+
+// for (int index = 0; index < array.Length; index++)
+// {
+//     array[index] = 1;
+// }
+// Console.WriteLine(length);
+
+// int[] array = new int[] { 67, 32, 323, -34, 35, -123, 0, 509, -956 };
+// int currentSmallest = int.MaxValue;
+
+// for (int index = 0; index < array.Length; index++)
+// {
+//     if (array[index] < currentSmallest)
+//         currentSmallest = array[index];
+// }
+
+// Console.WriteLine(currentSmallest);
+
+// int[] array = new int[] { 94, 92, 56, 382, 7485, 2532 };
+// int total = 0;
+
+// foreach (int value in array)
+//     total += value;
+
+// // for (int index = 0; index < array.Length; index++)
+// //     total += array[index];
+// float average = (float)total / array.Length;
+// Console.WriteLine(average);
+
+// int[] original = new int[5];
+
+// for (int item = 0; item < 5; item++)
+// {
+//     Console.Write("Input a value: ");
+//     int number = int.Parse(Console.ReadLine());
+//     original[item] = number;
+// }
+
+// int[] copy = new int[5];
+
+// for (int index = 0; index < 5; index++)
+//     copy[index] = original[index];
+
+// for (int index = 0; index < 5; index++)
+//     Console.WriteLine($"{original[index]} & {copy[index]}");
+
+// int[][] matrix = new int[3][];
+// matrix[0] = new int[] { 1, 2 };
+// matrix[1] = new int[] { 3, 4 };
+// matrix[2] = new int[] { 5, 6 };
+
+// Console.WriteLine(matrix[0][1]);
+
+// int[,] matrix = new int[3, 2] { { 1, 2 }, { 3, 4 }, { 5, 6 } };
+// Console.WriteLine(matrix[0,1]);
+
+// int[,] matrix = new int[4, 4];
+
+// for (int row = 0; row < matrix.GetLength(0); row++)
+// {
+//     for (int column = 0; column < matrix.GetLength(1); column++)
+//         Console.Write(matrix[row, column] + "");
+
+//     Console.WriteLine();
+// }
+
+// CountToTen();
+
+// void CountToTen()
+// {
+//     for (int current = 0; current <= 10; current++)
+//         Console.WriteLine(current);
+// }
+
+// int current = int.Parse(Console.ReadLine());
+// CountToTen();
+// CountToTwenty();
+
+// static void CountToTen()
+// {
+//     for (int current = 0; current <= 10; current++) 
+//         Console.WriteLine(current);
+// }
+// static void CountToTwenty()
+// {
+//     for (int current = 0; current <= 20; current++)
+//         Console.WriteLine(current);
+//}
+
+// static void Count(int numberToCountTo)
+// {
+//     for (int current = 1; current <= numberToCountTo; current++)
+//         Console.WriteLine(current);
+// }
+
+// int number = 57;
+// Count(10);
+// Count(20);
+// Count(number);
+
+// static void CountBetween(int start, int end)
+// {
+//     for (int current = start; current <= end; current++)
+//         Console.WriteLine(current);
+// }
+
+// CountBetween(20, 48);
+
+// Console.WriteLine("How high should I count?");
+// int chosenNumber = ReadNumber();
+// Count(chosenNumber);
+
+// static void Count(int numberToCountTo)
+// {
+//     for (int current = 1; current <= numberToCountTo; current++)
+//         Console.WriteLine(current);
+// }
+
+// int ReadNumber()
+// {
+//     string input = Console.ReadLine();
+//     int number = int.Parse(input);
+//     return number;
+// }
+
+// static string GetUserName()
+// {
+//     while (true)
+//     {
+//         Console.Write("What is your name? ");
+//         string name = Console.ReadLine();
+//         if (name != "")
+//             return name;
+//         Console.WriteLine("Let's try that again");
+//     }
+// }
+
+// GetUserName();
+
+// Console.Write("What number should I count to? ");
+// int number = int.Parse(Console.ReadLine());
+
+// static void Count(int numberToCountTo)
+// {
+//     if (numberToCountTo < 1)
+//         return;
+
+//     for (int current = 1; current <= numberToCountTo; current++)
+//         Console.WriteLine(current);
+// }
+
+// Count(56);
+
+// static void PrintTwice(string message)
+// {
+//     Console.WriteLine(message);
+//     Console.WriteLine(message);
+// }
+
+// PrintTwice("Zazoo");
+
+
+// int number = AskForNumberInRange("User 1, enter a number between 0 and 100: ", 0, 100);
+
+// Console.Clear();
+
+// Console.WriteLine("User 2, guess the number.");
+
+// while (true)
+// {
+//     int guess = AskForNumber("What is your next guess? ");
+//     if (guess > number) Console.WriteLine($"{guess} is too high");
+//     else if (guess < number) Console.WriteLine($"{guess} is too high");
+//     else break;
+// }
+
+// Console.WriteLine("You guess the number!");
+
+// int AskForNumber(string text)
+// {
+//     Console.Write(text, "");
+//     int number = int.Parse(Console.ReadLine());
+//     return number;
+// }
+
+// int AskForNumberInRange(string text, int min, int max)
+// {
+//     while (true)
+//     {
+//         int number = AskForNumber(text);
+//         if (number >= min && number <= max)
+//             return number;
+//     }
+// }
+
+// int Factorial(int number)
+// {
+//     if (number == 1) return 1;
+//     Console.WriteLine(number);
+//     return number * Factorial(number - 1); 
+// }
+
+// Factorial(45);
+
+// int CountDown(int number)
+// {
+//     if (number == 0) return 0;
+//     Console.WriteLine(number);
+//     return CountDown(number - 1);
+// }
+
+// CountDown(10);
+
+using System.Runtime.InteropServices;
+
+///<summary>
+/// Prints a certain message  twice in a row
+/// </summary>
+int cityHealth = 15;
+int manticoreHealth = 10;
+int round = 1;
+
+int range = AskForNumberInRange("How far away form the city do you want to station the manticore? ", 1, 100);
+Console.Clear();
+
+Console.WriteLine("Player 2, it is you turn.");
+
+while (cityHealth > 0 && manticoreHealth > 0) {
+    Console.ForegroundColor = ConsoleColor.White;
+    Console.WriteLine("-----------------------------------------");
+    DisplayStatus(round, cityHealth, manticoreHealth);
+
+    int damage = DamageForRound(round);
+    Console.ForegroundColor = ConsoleColor.Yellow;
+    Console.WriteLine($"The cannon is expected to deal {damage} damage this round.");
+
+    Console.ForegroundColor = ConsoleColor.White;
+    int targetRange = AskForNumber("Enter desired cannon range: ");
+
+    Console.ForegroundColor = ConsoleColor.Magenta;
+    DisplayOverOrUnder(targetRange, range);
+
+    if (targetRange == range) manticoreHealth -= damage;
+
+    if (manticoreHealth > 0) cityHealth--;
+
+    round++;
 }
 
-Console.WriteLine(currentMinimum);
+bool won = cityHealth > 0;
+DisplayWinOrLose(won);
 
-int total = 0;
+static void DisplayWinOrLose(bool won)
+{
+    if (won)
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("The manticore has been destroyed. The city of Consolas has been saved!");
+    }
+    else
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("The city has been destroyed. The Manticore and the Uncoded one have won!");
+    }
 
-foreach (int value in array)
-    total += value;
+        Console.Beep(523, 200); // C5
+        Console.Beep(659, 200); // E5
+        Console.Beep(784, 200); // G5
+        Console.Beep(1046, 400); // C6
+        Thread.Sleep(100);
+        Console.Beep(784, 400); // G5
+        Console.Beep(1046, 800); // C6
+        
+        // Little victory flourish
+        Console.Beep(1175, 150); // D6
+        Console.Beep(1319, 150); // E6
+        Console.Beep(1568, 300); // G6
+}
 
-float average = (float)total / array.Length;
-Console.WriteLine(average);
+static void DisplayOverOrUnder(int targetRange, int range)
+{
+    if (targetRange < range) Console.WriteLine("That round FELL SHORT of the target.");
+    else if (targetRange > range) Console.WriteLine("That round OVERSHOT the target.");
+    else Console.WriteLine("That round was a DIRECT HIT!");
+}
+
+static void DisplayStatus(int round, int cityHealth, int manticoreHealth)
+{
+    Console.WriteLine($"STATUS: Round: {round}, City: {cityHealth}, Manticore: {manticoreHealth}");
+}
+
+int DamageForRound(int roundNumber)
+{
+    if (roundNumber % 5 == 0 && roundNumber % 3 == 0) return 10;
+    else if (roundNumber % 5 == 0) return 3;
+    else if (roundNumber % 3 == 0) return 3;
+    else return 1;
+}
+
+int AskForNumber(string text)
+{
+    Console.Write(text + "");
+    Console.ForegroundColor = ConsoleColor.Cyan;
+    int number = int.Parse(Console.ReadLine());
+    return number;
+}
+
+int AskForNumberInRange(string text, int min, int max)
+{
+    while (true)
+    {
+        int number = AskForNumber(text);
+        if (number >= min && number <= max)
+            return number;
+    }
+}
