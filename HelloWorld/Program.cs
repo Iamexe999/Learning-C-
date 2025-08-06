@@ -757,3 +757,211 @@ int AskForNumberInRange(string text, int min, int max)
             return number;
     }
 }
+// Console.WriteLine("Hello World!");
+
+
+// Season current;
+// current = Season.Summer;
+
+// if (current == Season.Summer || current == Season.Winter)
+// {
+//     Console.WriteLine("Happy Solstice!");
+// }
+// else
+// {
+//     Console.WriteLine("Happy Equinox!");
+// }
+// enum Season { Winter, Spring, Summer, Autumn }
+
+// Chest current = Chest.Locked;
+
+// while (true)
+// {
+//     if (current == Chest.Locked)
+//     {
+//         Console.Write("The chest is locked. What do you want to do? ");
+//         string action = Console.ReadLine();
+
+//         if (action == "unlock")
+//         {
+//             current = Chest.Unlocked;
+//         }
+//         else
+//         {
+//             Console.WriteLine("Invalid action.");
+//         }
+//     }
+//     else if (current == Chest.Unlocked)
+//     {
+//         Console.Write("The chest is unlocked. What do you want to do? ");
+//         string action = Console.ReadLine();
+
+//         if (action == "open")
+//         {
+//             current = Chest.Open;
+//         }
+//         else if (action == "lock")
+//         {
+//             current = Chest.Locked;
+//         }
+//         else
+//         {
+//             Console.WriteLine("Invalid action.");
+//         }
+//     }
+//     else if (current == Chest.Open)
+//     {
+//         Console.Write("The chest is open. What do you want to do? ");
+//         string action = Console.ReadLine();
+
+//         if (action == "close")
+//         {
+//             current = Chest.Closed;
+//         }
+//         else
+//         {
+//             Console.WriteLine("Invalid action.");
+//         }
+//     }
+//     else if (current == Chest.Closed)
+//     {
+//         Console.Write("The chest is closed. What do you want to do? ");
+//         string action = Console.ReadLine();
+
+//         if (action == "open")
+//         {
+//             current = Chest.Open;
+//         }
+//         else if (action == "lock")
+//         {
+//             current = Chest.Locked;
+//         }
+//         else
+//         {
+//             Console.WriteLine("Invalid action.");
+//         }
+//     }
+// }
+// enum Chest { Locked, Unlocked, Open, Closed }
+
+// (string Name, int Points, int Level) score = ("Maxwell", 36857, 17);
+// Console.WriteLine($"Name: {score.Name}, Level: {score.Level}, Score: {score.Points}");
+
+// var score2 = (Name: "Kokujin", Points: 1400999, Level: 26);
+// Console.WriteLine($"Name: {score2.Name}, Level: {score2.Level}, Points: {score2.Points}");
+
+// static void DisplayScore((string Name, int Points, int Level) score)
+// {
+//     Console.WriteLine($"Name: {score.Name}, Level: {score.Level}, Points: {score.Points}");
+// }
+// DisplayScore(score);
+// DisplayScore(score2);
+
+// (string Name, int Points, int Level) GetScore() => ("John Doe", 192645, 67);
+// var score3 = GetScore();
+// DisplayScore(score3);
+
+// (string Name, int Points, int Levels)[] CreateHighScore()
+// {
+//     return new (string Name, int Points, int Level)[] {
+//         ("Adewale", 634737, 69),
+//         ("Gattsu", 459000, 23),
+//         ("Geopold", 657000, 34),
+//         ("WowMao", 190000, 45),
+//     };
+// }
+// Console.WriteLine(CreateHighScore());
+// CreateHighScore();
+
+// string name;
+// int points;
+// int level;
+
+// (name, points, level) = score;
+// Console.WriteLine($"{name} got through level {level} with {points} points.");
+
+// double x = 56;
+// double y = 45;
+// Console.WriteLine($"X now is {x}, Y now is {y}");
+// (x, y) = (y, x);
+// Console.WriteLine($"X after swap is {x}, Y after swap is {y}");
+
+// var a = (U: 2, V: 4);
+// var b = (W: 2, I: 4);
+// Console.WriteLine(a == b);
+
+// Console.WriteLine("Welcome to Simula's Kitchen");
+// Console.WriteLine("________________________________");
+// Console.Write("What type of food would you prefare?(Soup, Stew, Gumbo) ");
+// string typeInput = Console.ReadLine();
+// Console.Write("What is your preferred main ingredient?(Mushrooms, Chicken, Carrots, Potatoes) ");
+// string ingredientInput = Console.ReadLine();
+// Console.Write("What seasoning would you like?(Spicy, Salty, Sweet) ");
+// string seasoningInput = Console.ReadLine();
+
+// static void PrepareFood((FoodType type, FoodIngredient ingredient, FoodSeasoning seasoning) food)
+// {
+//     Console.WriteLine("Coming right up!");
+//     Console.WriteLine($"Your {food.seasoning} {food.ingredient} {food.type} is ready!");
+// }
+// PrepareFood();
+
+// enum FoodType { Soup, Stew, Gumbo };
+// enum FoodIngredient {Mushrooms, Chicken, Carrots, Potatoes};
+// enum FoodSeasoning {Spicy, Salty, Sweet};
+
+(SoupType type, MainIngredient ingredient, Seasoning seasoning) soup = GetSoup();
+Console.WriteLine($"{soup.seasoning} {soup.ingredient} {soup.type}");
+
+// Or this version, which skips the custom names:
+//(SoupType, MainIngredient, Seasoning) soup = GetSoup();
+//Console.WriteLine($"{soup.Item3} {soup.Item2} {soup.Item1}");
+
+(SoupType, MainIngredient, Seasoning) GetSoup()
+{
+    SoupType type = GetSoupType();
+    MainIngredient ingredient = GetMainIngredient();
+    Seasoning seasoning = GetSeasoning();
+    return (type, ingredient, seasoning);
+}
+
+SoupType GetSoupType()
+{
+    Console.Write("Soup type (soup, stew, gumbo): ");
+    string input = Console.ReadLine();
+    return input switch
+    {
+        "soup" => SoupType.Soup,
+        "stew" => SoupType.Stew,
+        "gumbo" => SoupType.Gumbo
+    };
+}
+
+MainIngredient GetMainIngredient()
+{
+    Console.Write("Main ingredient (mushroom, chicken, carrot, potato): ");
+    string input = Console.ReadLine();
+    return input switch
+    {
+        "mushroom" => MainIngredient.Mushroom,
+        "chicken" => MainIngredient.Chicken,
+        "carrot" => MainIngredient.Carrot,
+        "potato" => MainIngredient.Potato
+    };
+}
+
+Seasoning GetSeasoning()
+{
+    Console.Write("Seasoning (spicy, salty, sweet): ");
+    string input = Console.ReadLine();
+    return input switch
+    {
+        "spicy" => Seasoning.Spicy,
+        "salty" => Seasoning.Salty,
+        "sweet" => Seasoning.Sweet,
+    };
+}
+
+enum SoupType { Soup, Stew, Gumbo }
+enum MainIngredient { Mushroom, Chicken, Carrot, Potato }
+enum Seasoning { Spicy, Salty, Sweet }
