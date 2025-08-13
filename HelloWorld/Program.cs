@@ -965,3 +965,22 @@ Seasoning GetSeasoning()
 enum SoupType { Soup, Stew, Gumbo }
 enum MainIngredient { Mushroom, Chicken, Carrot, Potato }
 enum Seasoning { Spicy, Salty, Sweet }
+
+Score best = new Score();
+
+best.name = "John Doe";
+best.points = 723667;
+best.level = 67;
+
+if (best.EarnedStar())
+{
+    Console.WriteLine($"{best.name} has earned a star.");
+}
+
+class Score
+{
+    public string name;
+    public int points;
+    public int level;
+    public bool EarnedStar() => (points / level) > 1000;
+}
